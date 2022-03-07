@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dokumen Kontrak Berlangganan</title>
+    <style>
+        body{
+          font-family: Calibri;
+        }
+        .heading2{
+          background-color: #c5e0b3;
+          height: 2rem;
+          display: flex;
+          align-items: center;
+          padding-left: 0.2cm;
+          margin-bottom: 0;
+        }
+        .syarat > li::marker {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body style="max-width: 21cm; padding: 3cm;">
+  <p style="text-align: center; font-size: 1.4rem;"><strong> FORMULIR AGRIBISNIS <br></strong></p>
+      <p class="heading2"><strong>KELENGKAPAN DOKUMEN</strong></p>
+    <ul>
+      <li>Dokumen NIB</li>
+      <li>Logo Perusahaan/Badan Usaha</li>
+      <li>KTP (PIC penanggung jawab)</li>
+      <li>NPWP Perusahaan</li>
+    </ul>
+    <div class="heading2"><strong>INFORMASI PERUSAHAAN/BADAN USAHA</strong></div>
+    <p style="line-height: 1.5; margin-left: 0.2cm;">Nama Perusahaan    : {{ companyName }} <br>
+      Email Perusahaan    : {{ email }}<br>
+      No. Telepon         : {{ phoneNumber }}<br>
+      Alamat              : {{ address }}<br>
+    </p>
+    <p class="heading2"><strong>INFORMASI PIC </strong></p>
+    <p style="line-height: 1.5; margin-left: 0.2cm;">Nama Lengkap       : {{ companyPIC.name }} <br>
+      Jabatan             : {{ companyPIC.position }} <br>
+      No. Telepon/HP      : {{ phoneNumber }} <br>
+      Email               : {{ email }} <br>
+    </p>
+    <p class="heading2"><strong>LAYANAN</strong></p>
+    <ul style="display: flex;">
+      <li style="flex: 1;">AGREE PARTNER
+        <ul>
+          <li>Transaction Fee      : .....%</li>
+          <li>Field Assistant (FA) : .....man</li>
+        </ul>
+      </li>
+      <li style="flex: 1;">SMART FARMING AGREE
+        <ul>
+          <li>Managed Service Fee: 
+              <br>Rp. xxx.xxx,- /month</li>
+        </ul>
+      </li>
+    </ul>    
+    <div style="display: flex; justify-content: flex-end;">
+      <div style="width: 70%; margin-top: 7rem;">
+        <div>
+          <p style="text-align: center;"><strong><i>Date:</i> {{ currentDay }}, {{ dateTime }}</strong></p>
+        </div>
+        <div style="display: flex;">
+          <p style="flex: 1.5; text-align: center;"><strong>Perusahaan Perseroan (Persero) 
+            <br>PT Telekomunikasi Indonesia, Tbk</strong>
+          </p>
+          <p style="flex: 1; text-align: center;"><strong>{{ companyName }}</strong></p>
+        </div>
+      </div>
+    </div>
+    <div style="display: flex;">
+      <div style="flex: 1;">
+        <div class="heading2"><strong>PIC Telkom</strong></div>
+        <p style="display: flex; flex-direction: column; margin-left: 0.2cm;">
+          <span><strong>Nama : PIC_TELKOM</strong></span>
+          <span><strong><br>No. HP : PIC_TELKOM</strong></span>
+          <span><strong><br>Email  : PIC_TELKOM</strong></span>
+        </p>
+      </div>
+      <div style="flex: 1.5; display: flex; justify-content: center; align-items: flex-end; margin-bottom: 1.5rem;">
+        <p style="text-align: center;"><strong><u>Zuhed Nur</u>
+          <br>Tribe Leader of Agriculture & Farm</strong>
+        </p>
+      </div>
+      <div style="flex: 1; display: flex; justify-content: center; align-items: flex-end; margin-bottom: 1.5rem;">
+        <p style="text-align: center;"><strong><u>{{ companyPIC.name }}</u>
+          <br>{{ companyPIC.position }}</strong>
+        </p>
+      </div>
+    </div>
+    <p style="text-align: center;"><strong>SYARAT DAN KETENTUAN AGRIBISNIS</strong><br>
+      NOMOR: K.TEL.{{NUMBER}}/HK.810/DBT-EC010000/2022<br></p>
+      <ol type="1" style="padding-left: 0;" class="syarat">
+        <li style="margin-bottom: 1rem;"><strong>PENGANTAR</strong><br>
+          Dengan ditandatanganinya Formulir Agribisnis, maka dengan ini {{ companyName }} (“Perusahaan” atau “Pengguna”) dianggap telah membaca, menerima, dan menyetujui Syarat dan Ketentuan Agribisnis (“Syarat dan Ketentuan”) ini, Syarat dan Ketentuan ini mengatur penggunaan layanan Agree Partner dan Smart Farming Agree yang tersedia pada Platform Agree, yang dimiliki dan/atau dikembangkan oleh Perusahaan Perseroan (Persero) PT Telekomunikasi Indonesia, Tbk (untuk selanjutnya disebut “Telkom”) kepada Perusahaan. Pengguna disarankan membaca dengan seksama karena dapat berdampak kepada hak dan kewajiban Pengguna di bawah hukum.
+          <br><br>Syarat dan Ketentuan ini merupakan bentuk kesepakatan yang sah antara Pengguna dengan PT. Telekomunikasi Indonesia, Tbk. Jika Pengguna tidak menyetujui salah satu, sebagian, atau seluruh isi dokumen Syarat dan Ketentuan ini, maka Pengguna tidak diperkenankan menggunakan layanan Agree.
+        </li>
+        <li><strong>DEFINISI</strong><br>
+          <ol type="a">
+            <li> <strong> Agree</strong> atau <strong>Platform</strong> atau <strong>Platform Agree</strong> adalah sebuah platform kolaborasi yang dikembangkan dan di kelola oleh Telkom, baik website maupun mobile apps, untuk menciptakan ekosistem pertanian, perkebunan, peternakan, perikanan yang berkesinambungan. Agree terdiri dari 3 (tiga) fitur utama yang terintegrasi yaitu Agree Modal, Agree Partner, Agree Market.
+              <ol type="i">
+                <li><strong>Agree Partner</strong> adalah fitur untuk membantu perusahaan agribisnis/offtaker dalam mengelola Mitra Binaannya secara online, dan juga memfasilitasi Mitra Binaan untuk mendapatkan partner offtaker untuk menyalurkan hasil panen/tangkap. Agree Partner terdiri dari aplikasi FA dan dashboard yang terintegrasi dengan aplikasi Mitra dan layanan Smart Farming Agree.</li>
+                <li><strong>Smart Farming Agree</strong> adalah fitur tambahan pada layanan Agree Partner yang memberikan data, informasi, dan status dalam proses budi daya/tangkap melalui perangkat dan teknologi digital seperti internet of things (IOT), artificial intelligence (AI), dan lain-lain.</li>
+              </ol>
+            </li>
+            <li><strong>Agribisnis</strong> adalah sektor usaha yang bergerak di bidang pertanian, perkebunan, perikanan, dan/atau peternakan.</li>
+            <li><strong>Akun</strong> adalah informasi yang telah didaftarkan oleh Pengguna dan/atau Pelanggan pada situs Agree.</li>
+            <li><strong>Buyer</strong> adalah Pengguna terdaftar yang melakukan pembelian atas komoditas dan/atau sarana produksi (termasuk namun tidak terbatas pada sarana produksi pertanian, sarana produksi perikanan, sarana produksi peternakan, alat, mesin, dan peralatan lain yang mendukung proses produksi) yang dijual oleh Seller di Platform Agree yang mana wajib mematuhi Syarat dan Ketentuan Agree beserta ketentuan-ketentuan lainnya yang ditentukan kemudian.</li>
+            <li><strong>Field Assistant (FA)</strong> adalah pendamping lapangan yang membantu Mitra Binaan dan Perusahaan meliputi namun tidak terbatas pada aktivitas kemitraan, budidaya, dan pencatatan panen.</li>
+            <li><strong>Harga Beli</strong> adalah harga komoditas hasil atau produk pertanian, perikanan, maupun peternakan yang menjadi komponen perhitungan Nilai Transaksi.</li>
+            <li><strong>Installation fee</strong> adalah biaya yang dikenakan atas jasa implementasi Smart Farming Agree.</li>
+            <li><strong>Komoditas</strong> adalah hasil bumi atau hasil budi daya (diantaranya produk pertanian, perikanan, dan peternakan) dari Pengguna petani, peternak, nelayan, dan pembudi daya, yang berwujud dan memenuhi kriteria pengiriman oleh perusahaan jasa pengiriman barang.</li>
+            <li><strong>Managed Service fee</strong> adalah biaya rutin yang dikenakan setiap bulan atas penggunaan Layanan Smart Farming Agree.</li>
+            <li><strong>Mitra Binaan</strong> adalah Petani, Peternak, Nelayan, Pembudi daya atau sebutan lainnya sebagai pihak yang melakukan kerja sama dengan Perusahaan Agribisnis.</li>
+            <li><strong>Nilai Transaksi</strong> adalah total nilai rupiah komoditas hasil panen/tangkap Mitra Binaan yang dibayarkan Perusahaan kepada Mitra Binaan dimana di dalamnya sudah termasuk fee Telkom dan Pajak Pertambahan Nilai (PPN) (jika dikenakan).</li>
+            <li><strong>Perusahaan</strong> adalah Badan Usaha atau lembaga atau yayasan yang melakukan aktivitas Agribisnis.</li>
+            <li><strong>Pihak Ketiga</strong> adalah pihak-pihak yang bekerja sama dengan Telkom dalam memberikan layanan Agree Partner dan Smart Farming Agree kepada Pengguna.</li>
+            <li><strong>Rekonsiliasi</strong> adalah perbandingan/ penyesuaian transaksi antara data Perusahaan dan data Telkom.</li>
+            <li><strong>Transaksi</strong> adalah semua kegiatan/aktivitas jual beli, offtake, dan aktivitas lainnya yang tercatat di platform Agree.</li>
+            <li><strong>Transaction Fe</strong> adalah persentase dari Nilai Transaksi yang dibebankan kepada Perusahaan atas penggunaan layanan Agree Partner.</li>
+            <li style="margin-bottom: 1rem;"><strong>Waktu Cut-off</strong> adalah suatu waktu dimana seluruh transaksi yang dilakukan pada hari tersebut dicatat oleh Telkom sebagai dasar untuk rekonsiliasi kepada Perusahaan dan dalam hal ini adalah pukul 23.59 pada hari terakhir setiap bulan.</li>
+          </ol>
+        </li>
+    <li><strong>RUANG LINGKUP</strong>
+      <ol type="a">
+        <li>Anda menyepakati penggunaan platform Agree sesuai dengan Layanan yang dipilih pada Formulir Agribisnis.</li>
+        <li>TELKOM bertindak sebagai penyedia platform Agree (<i>exclude perangkat smart farming</i>) kepada Pengguna.</li>
+        <li>Sebagai Perusahaan, Anda menjalankan proses kemitraan dengan Mitra Binaan melalui Agree Partner dengan aktivitas meliputi namun tidak terbatas pada monitoring proses budi daya/tangkap, proses rekrut Mitra Binaan, survei, dan penyelesaian kewajiban Mitra Binaan & Perusahaan melalui Platform Agree.</li>
+        <li>Anda melakukan dukungan integrasi solusi terkait permodalan yang dilakukan untuk para Mitra Binaan melalui Platform Agree</li>
+        <li>Pengguna menyetujui dan menyepakati pembayaran kepada Telkom atas penggunaan platform Agree sesuai model bisnis dalam Formulir Agribisnis serta Syarat dan Ketentuan ini.</li>
+        <li>Perusahaan bertindak sebagai Pengguna Platform Agree yang setuju dan bersedia mematuhi seluruh ketentuan dan syarat penggunaan layanan yang ditetapkan TELKOM baik ketentuan yang dimaksud dalam Syarat dan Ketentuan ini maupun ketentuan-ketentuan yang lainnya yang ditentukan kemudian.</li>
+        <li style="margin-bottom: 1rem;">Dalam hal terjadi keadaan di mana Pengguna melanggar Syarat dan Ketentuan atau melanggar hukum yang berlaku di Indonesia, maka Telkom berhak sewaktu-waktu melakukan penutupan akun dan/atau penutupan hak akses secara sepihak, tergantung pada bentuk pelanggaran yang dilakukan oleh Pengguna.</li>
+      </ol>
+    </li>
+    <li><strong>PERSYARATAN</strong>
+      <ol type="a">
+        <li>Pengguna telah mengisi data dan informasi serta melengkapi dokumen yang dibutuhkan sebagaimana tertera dalam Formulir Agribisnis.</li>
+        <li>Memastikan bahwa Pengguna memberikan persetujuan melalui perwakilannya untuk menandatangani Syarat dan Ketentuan ini dan Formulir Agribisnis.</li>
+        <li>Pengguna berkewajiban mengikuti mekanisme perikatan melalui Syarat dan Ketentuan ini baik secara online maupun offline sesuai dengan ketentuan Telkom.</li>
+        <li>Bersedia menanggung segala risiko dan konsekuensi yang timbul atas tidak dipatuhinya seluruh Syarat dan Ketentuan ini maupun perubahannya yang ditetapkan oleh Telkom dan termasuk Syarat dan Ketentuan yang berlaku pada proses pendaftaran layanan.</li>
+        <li style="margin-bottom: 1rem;">Dalam hal terjadi keadaan di mana Pengguna melanggar Syarat dan Ketentuan atau melanggar hukum yang berlaku di Indonesia, maka Telkom berhak sewaktu-waktu melakukan penutupan akun dan/atau penutupan hak akses secara sepihak, tergantung pada bentuk pelanggaran yang dilakukan oleh Pengguna.</li>
+      </ol>
+    </li>
+    <li><strong>HAK DAN KEWAJIBAN PENGGUNA</strong><br>
+      <ol type="a">
+        <li><strong>Hak Pengguna</strong>
+          <ol type="i">
+            <li>Mendapatkan akses penggunaan layanan Agree Partner dan/atau Smart Farming Agree.</li>
+            <li>Mendapatkan dukungan teknis terkait layanan Agree Partner dan/atau Smart Farming Agree ketika terjadi gangguan pada Platform Agree.</li>
+            <li>Mendapatkan informasi terkait layanan Agree sesuai dengan prosedur dan regulasi yang berlaku di Telkom.</li>
+            <li>Mendapatkan API untuk integrasi Platform Agree dengan sistem yang dimiliki Pengguna (apabila ada).</li>
+            <li>Mendapatkan informasi atas segala pemeliharaan Platform Agree yang berdampak pada kegiatan operasional layanan.</li>
+            <li>Mendapatkan dukungan teknis terkait platform Agree ketika terjadi kendala teknis.</li>
+            <li>Memperoleh data Mitra Binaan yang diinput dalam Platform Agree dengan telah mendapat persetujuan sebelumnya dari Mitra Binaan.</li>
+          </ol>
+        </li>
+        <li><strong>Kewajiban Pengguna</strong>
+          <ol type="i">
+            <li>Mematuhi segala ketentuan yang tertera pada Syarat dan Ketentuan ini serta syarat dan ketentuan lain dari Telkom.</li>
+            <li>Menjaga kerahasiaan informasi nama baik Telkom.</li>
+            <li>Menyediakan informasi dan data yang dibutuhkan untuk penggunaan layanan Agree Partner dan/atau Smart Farming Agree.</li>
+            <li>Bertanggung jawab atas keseluruhan data dan informasi yang diinputkan pada aplikasi Agree Partner. Segala bentuk kerugian atau konsekuensi lain yang diakibatkan kesalahan dan/atau ketidakakuratan data dan informasi yang diberikan.</li>
+            <li>Menjalankan proses bisnis dan transaksi dengan Mitra Binaan dengan tidak bertentangan dengan Undang-Undang.</li>
+            <li>Bersama Mitra Binaan bertanggung jawab atas segala konsekuensi dari setiap permasalahan dalam proses kemitraan.</li>
+            <li>Melakukan pembayaran Transaction Fee dan Field Assistant (jika menggunakan jasa FA dari Telkom) kepada Telkom sesuai dengan yang tercantum dalam Formulir Agribisnis.</li>
+            <li>Memastikan kerahasiaan data dan informasi mengenai transaksi termasuk namun tidak terbatas pada informasi Mitra Binaan dan tidak diperbolehkan untuk memberikan data dan informasi tersebut kepada pihak lain untuk keperluan apapun selain yang telah diatur dalam ketentuan layanan Agree.</li>
+            <li>Mengikuti mekanisme perikatan melalui Syarat dan Ketentuan ini baik secara online maupun offline sesuai ketentuan Telkom.</li>
+            <li>Melakukan approaching penggunaan Platform Agree kepada Mitra Binaannya.</li>
+            <li style="margin-bottom: 1rem;">Melakukan pengawalan dan monitoring sehubungan pengelolaan para Mitra Binaan, proses rekrut Mitra Binaan, survei, dan penyelesaian kewajiban kepada Mitra Binaan.</li>
+          </ol>
+        </li>
+      </ol>
+    </li>
+    <li><strong>PEMENUHAN LAYANAN</strong>
+      <ol type="a">
+        <li>Layanan dapat diaktifkan setelah Pelanggan menyetujui dan menandatangani Formulir Agribisnis serta Syarat dan Ketentuan ini.</li>
+        <li>Pengguna akan menerima email aktivasi dari Agree serta dapat menggunakan layanan setelah melakukan aktivasi dengan membuka tautan dalam email dimaksud.</li>
+        <li>Pengguna dapat mengajukan untuk menonaktifkan layanan Agree Partner dan/atau Smart Farming Agree dengan cara menghubungi helpdesk Agree sebagai bagian dari layanan penyelesaian pengaduan.</li>
+        <li>Pengguna mengetahui bahwa Telkom bekerja sama dengan pihak ketiga dalam menyediakan layanan Agree Partner dan/atau Smart Farming Agree kepada Perusahaan.</li>
+        <li style="margin-bottom: 1rem;">Pengguna memahami bahwa Telkom dapat bekerja sama dengan pihak ketiga untuk menyediakan perangkat smart farming termasuk jasa instalasi. Segala sesuatu terkait perangkat menjadi tanggung jawab antara Pengguna dan Pihak Ketiga.</li>
+      </ol>
+    </li>
+    <li><strong>TRANSAKSI DENGAN MITRA BINAAN</strong>
+      <ol type="a">
+        <li>Pengguna mengetahui dan menyetujui untuk melakukan pencatatan setiap transaksi dengan Mitra Binaan melalui aplikasi Agree Partner meliputi namun tidak terbatas pada Harga Beli, volume komoditas atau produk, dan Nilai Transaksi.</li>
+        <li>Nilai Transaksi dan Pembayaran atas pembelian hasil panen/tangkap Mitra Binaan dilakukan sesuai kesepakatan antara Mitra Binaan dengan Perusahaan yang tercatat pada platform Agree.</li>
+        <li style="margin-bottom: 1rem;">Apabila terdapat kendala atau kerugian yang Pengguna alami dikarenakan transaksi yang tidak sesuai kesepakatan dengan Mitra Binaan, maka hal tersebut sepenuhnya akan menjadi tanggung jawab Pengguna dan Mitra Binaan, serta melepaskan Telkom dari adanya klaim ataupun proses penyelesaiannya kecuali jika dibutuhkan sehubungan peran Telkom sebagai penyedia platform Agree.</li>
+      </ol>
+    </li>
+    <li><strong>MODEL BISNIS</strong>
+      <ol type="a">
+        <li>Pengguna telah mengetahui model bisnis yang dikenakan ke Pengguna untuk layanan Agree Partner dan/atau Smart Farming Agree.</li>
+        <li>Pembelian perangkat <i>smart farming</i> beserta Installation Fee dibayarkan oleh Pengguna ke pihak ketiga melalui platform Agree.</li>
+        <li>Pengguna menyetujui pembayaran kepada Telkom atas penggunaan Agree Partner dan/atau Smart Farming Agree sesuai yang tercantum dalam Formulir Agribisnis dan Syarat dan Ketentuan ini.</li>
+        <li>Jumlah yang harus dibayarkan Pengguna apabila menggunakan jasa Field Assistant dari Telkom adalah Rp. 2.000.000,- per bulan per orang.</li>
+        <li style="margin-bottom: 1rem;">Transaction Fee yang dikenakan ke Pengguna atas penggunaan Agree Partner dihitung sesuai Nilai Transaksi untuk setiap Transaksi yang tercatat pada Agree Partner.</li>
+      </ol>
+    </li>
+    <li><strong>REKONSILIASI</strong>
+      <ol type="a">
+        <li>Pelaksanaan Rekonsiliasi dapat dilakukan sesuai kebutuhan dan dengan mekanisme yang disepakati Pengguna dan Telkom dengan pertimbangan untuk menyelesaikan perbedaan data.</li>
+        <li>Pengguna dapat mengajukan sanggahan ke Telkom atas Transaksi yang diklaim tidak sesuai atau terjadi kesalahan dalam pencatatannya atau alasan lain dengan disertai dokumen pendukung yang dapat diterima oleh Telkom.</li>
+        <li>Apabila Rekonsiliasi dilakukan, maka hasil Rekonsiliasi tersebut akan dituangkan pada suatu Berita Acara Rekonsiliasi yang ditandatangani oleh perwakilan dari masing-masing Pihak dengan Telkom cq Mgr. Settlement & Business Analyst (atau pejabat yang diberi kewenangan) dan wakil dari Pengguna.</li>
+        <li>Berita Acara Rekonsiliasi yang telah ditandatangani dapat menjadi dasar Telkom untuk menerbitkan tagihan/invoice kepada Pengguna.</li>
+        <li>Dalam rangka rekonsiliasi Para Pihak akan mengacu pada :
+          <ol type="i">
+            <li>Dashboard milik Telkom</li>
+            <li style="margin-bottom: 1rem;">Data transaksi antara Mitra Binaan dengan Perusahaan.</li>
+          </ol>
+        </li>
+      </ol>
+    </li>
+    <li><strong>KETENTUAN PEMBAYARAN</strong>
+      <ol type="a">
+        <li>Pengguna sepakat dan menyetujui bahwa Transaksi yang tercatat dalam aplikasi Agree Partner menjadi dasar acuan perhitungan untuk pembayaran dari Pengguna ke Telkom.</li>
+        <li>Pembayaran atas penggunaan platform Agree dilakukan selambat-lambatnya 14 (empat belas) hari kerja setelah dokumen invoice dari Telkom diterima Pengguna, adapun dokumen yang perlu dilengkapi Telkom adalah sebagai berikut :
+          <ol type="i">
+            <li>Invoice & Kwitansi Bermaterai</li>
+            <li>Faktur Pajak</li>
+            <li>BA Rekonsiliasi (bila ada/dibutuhkan)</li>
+          </ol>
+        </li>
+        <li>Pembayaran akan dilakukan oleh Pengguna secara transfer dengan biaya transfer menjadi tanggung jawab Pengguna kepada rekening Telkom, yaitu sebagai berikut:
+          <ol style="list-style: none;">
+            <li>Nama Pemilik Rek. : TELKOM</li>
+            <li>No. Rekening : 1310096022712</li>
+            <li>Bank : Bank Mandiri</li>
+            <li>Branch : KCP Bdg Kanpus Telkom</li>
+          </ol>
+        </li>
+        <li>Jika terjadi keterlambatan pembayaran oleh Pengguna setelah jangka waktu 14 (empat belas) hari kalender dari dikirimkannya invoice ke Pengguna, maka layanan Agree kepada Pengguna akan diberhentikan sementara sampai Pengguna melakukan pembayaran.</li>
+        <li>Proses pembayaran yang dimaksud pada bagian ini dilakukan pada Hari Kerja dan pembayaran menggunakan mata uang rupiah (IDR) dan sudah termasuk PPN 10% (jika dikenakan).</li>
+        <li style="margin-bottom: 1rem;">Dokumen Syarat dan Ketentuan ini yang telah ditandatangani oleh Pengguna menjadi dasar awal penagihan dari Telkom.</li>
+      </ol>
+    </li>
+    <li><strong>PENYELESAIAN PENGADUAN</strong>
+      <ol type="a">
+        <li>Penanganan gangguan (helpdesk/customer service) terkait layanan dalam Syarat dan Ketentuan ini, Pengguna dapat menghubungi helpdesk Agree melalui Whatsapp 082228000720 atau email admin@digitalpass.id.</li>
+        <li style="margin-bottom: 1rem;">Dalam hal adanya penambahan dan/atau pengurangan dan/atau perubahan channel pengaduan akan diinformasikan Telkom kemudian.</li>
+      </ol>
+    </li>
+    <li style="margin-bottom: 1rem;"><strong>PEMBEBASAN TANGGUNG JAWAB</strong><br>
+      Telkom dibebaskan dari segala tanggung jawab:
+      <ol type="a">
+        <li>Kegagalan pembayaran akibat terganggunya system pembayaran yang menyebabkan terganggunya pembayaran kepada Telkom.</li>
+        <li>Atas segala risiko dan konsekuensi akibat kesalahan data dan informasi yang diinputkan Pengguna.</li>
+        <li>Atas segala risiko akibat penggunaan data atau informasi rahasia oleh Pengguna atau pihak ketiga.</li>
+        <li>Atas tuntutan dari Mitra Binaan atau pihak ketiga lainnya.</li>
+        <li>Apabila terjadi gangguan pada koneksi internet atau jaringan komunikasi atau perangkat Pengguna.</li>
+        <li>Apabila terdapat permasalahan terkait kemitraan antara Perusahaan dan Mitra Binaan, sepanjang tidak berhubungan dengan posisi Telkom sebagai penyedia platform Agree.</li>
+      </ol>
+    </li>
+    <li><strong>PENGGUNAAN NAMA, MEREK DAN LOGO</strong>
+      <ol type="a">
+        <li>Telkom dapat menggunakan nama, merek, dan logo Perusahaan untuk ditampilkan di platform Agree, serta untuk kebutuhan promosi melalui media lain.</li>
+        <li>Nama, merek, logo, dan hak atas kekayaan intelektual yang dimiliki oleh Perusahaan masing-masing Pihak tetap menjadi kepemilikan Pihak yang memilikinya.</li>
+        <li style="margin-bottom: 1rem;">Hak Atas Kekayaan Intelektual terkait dengan Agree Partner dan Smart Farming Agree adalah milik TELKOM yang diperoleh dengan cara yang sah dan tidak melanggar peraturan perundang-undangan yang berlaku di Indonesia sampai dapat dibuktikan sebaliknya.        </li>
+      </ol>
+    </li>
+    <li><strong>PENGHENTIAN LAYANAN SEMENTARA</strong>
+      <ol type="a">
+        <li>Layanan Agree Partner dan Smart Farming Agree dapat dihentikan sementara oleh Telkom apabila: (1) dilakukan maintenance terhadap server/jaringan, (2) terjadi gangguan pada server/jaringan yang dikhawatirkan dapat menyebabkan permasalahan pada penggunaan, dan (3) hal lainnya yang menyebabkan server atau layanan menjadi terganggu.</li>
+        <li style="margin-bottom: 1rem;">Telkom dapat menghentikan Layanan jika Telkom merasa perlu untuk melakukan penghentian layanan.</li>
+      </ol>
+    </li>
+    <li style="margin-bottom: 1rem;"><strong>FORCE MAJEURE</strong><br>
+      Masing-masing Pihak tidak dapat diminta pertanggungjawaban untuk keterlambatan dan/atau kegagalan dalam memenuhi kewajiban yang disebabkan oleh kejadian-kejadian di luar kemampuan Para Pihak (selanjutnya disebut Force Majeure) dan tidak dapat ditanggulangi oleh para pihak mengenai keberadaannya. Kejadian-kejadian yang dapat dikategorikan Force Majeure adalah termasuk segala keadaan atau peristiwa yang terjadi di luar kekuasaan Para Pihak, termasuk akan tetapi tidak terbatas pada huru-hara, epidemi, kebakaran, banjir, gempa bumi, pemogokan umum, perang, sabotase, dan berlaku efektifnya suatu ketentuan perundang-undangan Republik Indonesia yang membatasi maupun mengakibatkan masing-masing pihak tidak dapat melaksanakan kewajibannya menurut Syarat dan Ketentuan ini.
+    </li>
+    <li style="margin-bottom: 1rem;"><strong>PENYELESAIAN PERSELISIHAN</strong><br>
+      Telkom dan Pengguna sepakat bahwa dalam melaksanakan Syarat dan Ketentuan ini akan tunduk dan diatur dengan Hukum Indonesia. Telkom dan Pengguna sepakat bahwa dalam hal terjadi perselisihan, maka akan diselesaikan melalui musyawarah untuk mufakat.
+    </li>
+    <li style="margin-bottom: 1rem;"><strong>JANGKA WAKTU</strong><br>
+      Syarat dan Ketentuan ini berlaku 2 tahun sejak tanggal ditandatanganinya Formulir Seller dan akan diperpanjang otomatis untuk periode yang sama hingga Syarat dan Ketentuan ini diakhiri oleh salah satu Pihak.
+    </li>
+    <li><strong>LAIN-LAIN</strong>
+      <ol type="a">
+        <li>Pengguna menyadari bahwa demi kepentingan hukum, Telkom dapat menyimpan salinan data Pengguna. Maka dari itu, Telkom akan tetap menyimpan data Pengguna sekalipun Syarat dan Ketentuan ini diakhiri.</li>
+        <li>Segala ketentuan dalam Syarat dan Ketentuan ini berlaku mengikat bagi pihak yang menandatangani Formulir Agribisnis, penggantinya, dan/atau penerusnya.</li>
+        <li>Jika di masa mendatang terdapat perubahan pada Syarat dan Ketentuan ini, maka Telkom dan Pengguna sepakat bahwa perubahan tersebut akan dimuat dalam Berita Acara Kesepakatan (BAK) yang akan ditandatangani wakil para pihak yang berwenang.</li>
+        <li style="margin-bottom: 1rem;">Dengan ditandatanganinya Formulir Agribisnis, maka Para Pihak telah menyetujui dan memahami Syarat dan Ketentuan ini.</li>
+      </ol>
+    </li>
+</body>
+</html>

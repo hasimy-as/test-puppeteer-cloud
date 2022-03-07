@@ -1,0 +1,34 @@
+{
+  "name": "test-puppeteer-cloud",
+  "version": "1.0.0",
+  "description": "For testing puppeteer headless chrome via cloud.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "engines": {
+    "node": "14.5.0",
+    "npm": "7.6.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hasimy-as/test-puppeteer-cloud.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hasimy-as/test-puppeteer-cloud/issues"
+  },
+  "homepage": "https://github.com/hasimy-as/test-puppeteer-cloud#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "minio": "^7.0.26",
+    "moment": "^2.29.1",
+    "mustache": "^3.0.1",
+    "puppeteer": "^13.4.1",
+    "restify": "^8.6.1",
+    "restify-router": "^0.6.2",
+    "validate.js": "^0.13.1"
+  }
+}

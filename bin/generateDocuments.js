@@ -22,7 +22,7 @@ const generateDocuments = async (req, res) => {
     dateTime: moment(new Date()).locale('id').format('D MMMM YYYY'),
   };
 
-  const browser = await puppeteer.launch();
+  const browser = await puppeteer.launch({ args: ['--no-sandbox'] });
   const page = await browser.newPage();
   const templateContract = fs.readFileSync('./bin/dummyFile.html', 'utf8');
 

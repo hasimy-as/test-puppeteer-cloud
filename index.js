@@ -20,7 +20,7 @@ router.applyRoutes(server, '/docs');
 server.get('/', (req, res) => response.data(res, 'Home', 'Hello world!', CODE.SUCCESS));
 
 /** @description: Server port **/
-const PORT = 9000;
+const PORT = process.env.PORT || 9000;
 
 server.listen(PORT, async (err) => {
   if (err) {
